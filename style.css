@@ -1,0 +1,137 @@
+:root{
+    /* CSS HEX */
+    --pine-tree: #1f271bff;
+    --blue-sapphire: #19647eff;
+    --verdigris: #28afb0ff;
+    --dark-sea-green: #8ec187ff;
+    --orange-yellow-crayola: #f4d35eff;
+    --sandy-brown: #ee964bff;
+    
+    --tangerine: #f08700ff;
+    --orange-web: #f49f0aff;
+    --yellow-munsell: #efca08ff;
+    --light-sea-green: #00a6a6ff;
+    --columbia-blue: #bbdef0ff;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin:0; padding:0;
+    background-color: #eee;
+    font-size: 20px;
+
+}
+.wrapper{
+    max-width: 700px;
+    border-radius: 2vh;
+    box-shadow: 0 0 5px #555;
+    margin: auto;
+    margin-top: 3vh;
+    padding:2vmin;
+    background-color: var(--columbia-blue);
+}
+.flex{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:1vw;
+}
+
+.header{
+    border-bottom: 1px dashed var(--blue-sapphire);
+    color:var(--blue-sapphire);
+    justify-content: space-between;
+    padding-left: 5vmin;
+    font-size: 1.5rem;
+}
+.profile{
+    margin-left: auto;
+    gap:5vmin;
+    display: none;
+}
+.scoreIcon{
+    width: 30px;
+}
+/* .welcomeScr{
+    display: none;
+} */
+.gameScr{
+    display:none;
+}
+
+/* WELCOMESCREEN */
+.welcomeScr p{
+    text-align: center;
+}
+#gameSet{
+    flex-direction: column;
+    margin-top: 5vh;
+}
+#gameSet p{
+    font-weight: 500;
+    color:var(--blue-sapphire);
+}
+#gameSet input, #gameSet select{
+    width:auto;
+    height:auto;
+    padding: 5px 0;
+    background-color: var(--light-sea-green);
+    border:none;
+    color:#eee;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+}
+#gameSet input{
+    max-width: 100px;
+}
+#gameSet select{
+    max-width: 20vw;
+}
+.timeCard{
+    padding: 1vmin 2vmin;
+    border-radius: 5px;
+    margin:0 1vw;
+    background-color: var(--blue-sapphire);
+    color:#fff;
+    box-shadow: 1px 2px 3px #555;
+    cursor:pointer;
+}
+
+/* GAMESCREEN */
+.gameScr{
+    padding:3vmin;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.count{
+    gap:5vw;
+}
+.cards{
+    flex-wrap: wrap;
+}
+.cards div{
+    transition:0.2s;
+}
+.cards div:active{
+    transform: rotate(10deg);
+}
+#timeLimitDiv {
+    display: none;
+}
+
+#completedIcon{
+    transition: 0.3s;
+}
+
+.gameOverScr{
+    text-align: center;
+    color:var(--verdigris);
+    font-weight: 500;
+}
+
+.resultTxt{
+    font-weight: 700;
+    color: var(--tangerine);
+    
+}
